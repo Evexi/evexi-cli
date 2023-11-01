@@ -22,7 +22,7 @@ brew install evexi/tools/evexi-cli
 Available on Windows via [WinGet](https://github.com/microsoft/winget-cli) package manager:
 
 ```sh
-winget install evexi.EvexiCLI
+winget install Evexi.EvexiCLI
 ```
 
 ## Usage/Examples
