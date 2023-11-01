@@ -27,6 +27,8 @@ winget install Evexi.EvexiCLI
 
 ## Usage/Examples
 
+
+
 ### Player Copy
 
 This commands allows you to copy content, application and variables of a player to other players.
@@ -37,20 +39,19 @@ This commands allows you to copy content, application and variables of a player 
 - Variables already present on the target player and not on the source player won't be deleted
 
 
-| Option           | Description                                                                                | Required                          |
-|------------------|--------------------------------------------------------------------------------------------|-----------------------------------|
-| --only           | Comma separated list of properties to copy (content,application,variables). Default to all | No                                |
-| --source:id      | ID of the source player                                                                    | If `source:device` not specified  |
-| --source:device  | Device ID of the source player                                                             | If `source:id` not specified      |
-| --target:ids     | Comma separated IDs of player where to copy properties                                     | If `target:devices` not specified |
-| --target:devices | Comma separated Device IDs of players where to copy properties                             | If `target:ids` not specified     |
-| --interactive    | Update target players one at a time. User will be prompted to press ENTER to proceed       | No                                |
-
+| Option           | Description                                                                                     | Required                          |
+|------------------|-------------------------------------------------------------------------------------------------|-----------------------------------|
+| --source:id      | ID of the source player                                                                         | If `source:device` not specified  |
+| --source:device  | Device ID of the source player                                                                  | If `source:id` not specified      |
+| --target:ids     | Comma separated IDs of player where to copy properties                                          | If `target:devices` not specified |
+| --target:devices | Comma separated Device IDs of players where to copy properties                                  | If `target:ids` not specified     |
+| --only           | Comma separated list of properties to copy (content,application,variables). <br>Defaults to all | No                                |
+| --interactive    | Update target players one at a time. <br>User will be prompted to press ENTER to proceed        | No                                |
+| --help           | Show command help                                                                               | No                                |
 
 #### Example copy by player id
-```sh
-#### By Player ID
 
+#### By Player ID
 ```sh
 evexi player copy --source:id 000000000000000000000001 --target:ids 000000000000000000000002,000000000000000000000001
 ```
