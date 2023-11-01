@@ -14,7 +14,7 @@ Evexi CLI is available for macOS, Windows, and Linux.
 Available via [Homebrew](https://brew.sh/):
 
 ```sh
-brew install evexi/tools/cli
+brew install evexi/tools/evexi-cli
 ```
 
 ### Windows
@@ -22,8 +22,9 @@ brew install evexi/tools/cli
 Available on Windows via [WinGet](https://github.com/microsoft/winget-cli) package manager:
 
 ```sh
-winget install vexi.EvexiCLI
+winget install evexi.EvexiCLI
 ```
+
 ## Usage/Examples
 
 ### Player Copy
