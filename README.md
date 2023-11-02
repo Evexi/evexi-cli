@@ -51,12 +51,11 @@ This commands allows you to copy content, application and variables of a player 
 
 #### Example copy by player id
 
-#### By Player ID
 ```sh
 evexi player copy --source:id 000000000000000000000001 --target:ids 000000000000000000000002,000000000000000000000001
 ```
 
-#### Example copy by player device id
+#### Example copy by player's device id
 
 ```sh
 evexi player copy --source:device 11111111111111111111111111111111 --target:devices 22222222222222222222222222222222,33333333333333333333333333333333
