@@ -19,7 +19,7 @@ brew install evexi/tools/evexi-cli
 
 ### Windows
 
-Available on Windows via [WinGet](https://github.com/microsoft/winget-cli) package manager:
+Available via [WinGet](https://github.com/microsoft/winget-cli) package manager:
 
 ```sh
 winget install Evexi.EvexiCLI
@@ -39,15 +39,14 @@ This commands allows you to copy content, application and variables of a player 
 - Variables already present on the target player and not on the source player won't be deleted
 
 
-| Option           | Description                                                                                     | Required                          |
-|------------------|-------------------------------------------------------------------------------------------------|-----------------------------------|
-| --source:id      | ID of the source player                                                                         | If `source:device` not specified  |
-| --source:device  | Device ID of the source player                                                                  | If `source:id` not specified      |
-| --target:ids     | Comma separated IDs of player where to copy properties                                          | If `target:devices` not specified |
-| --target:devices | Comma separated Device IDs of players where to copy properties                                  | If `target:ids` not specified     |
-| --only           | Comma separated list of properties to copy (content,application,variables). <br>Defaults to all | No                                |
-| --interactive    | Update target players one at a time. <br>User will be prompted to press ENTER to proceed        | No                                |
-| --help           | Show command help                                                                               | No                                |
+| Option                               	| Description                                                                                                                                                                                                                                          	| Default                       	| Required 	|
+|--------------------------------------	|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	|-------------------------------	|----------	|
+| --source:id **or** --source:device   	| Specify either the source player ID which can be seen in the browser URL when viewing the player on admin<br>**or**<br>device ID which can be seen when viewing the player detail on admin or on the actual screen                                   	| -                             	| Yes      	|
+| --target:ids **or** --target:devices 	| Specify a comma separated list of either the target player IDs which can be seen in the browser URL when viewing the players on admin <br>**or** <br>device IDs which can be seen when viewing the players' detail on admin or on the actual screens 	| -                             	| Yes      	|
+| --only                               	| Specify a comma separated list of properties to copy from the source player<br><br>Values: content,application,variables                                                                                                                             	| content,application,variables 	| No       	|
+| --interactive                        	| Specify whether to execute the copy one target player at a time<br><br>User will be prompted to press ENTER to proceed                                                                                                                               	| false                         	| No       	|
+| --help                               	| Show command help                                                                                                                                                                                                                                    	| false                         	| No       	|
+
 
 #### Example copy by player id
 
